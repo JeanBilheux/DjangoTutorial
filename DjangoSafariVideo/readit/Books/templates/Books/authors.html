@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Authors Page</title>
+    </head>
+    <body>
+        <ul>
+        {% for author in authors %}
+            <li> {{author.name}}</li>
+        {% empty %}
+            <p>no authors listed</p>
+        {% endfor %}
+        </ul>
+    </bodY>
+</html>
