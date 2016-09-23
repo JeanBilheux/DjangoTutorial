@@ -1,8 +1,9 @@
 from django.conf.urls import include, url
 
-from .views import hello, viewArticle
+from .views import hello, viewArticle, viewArticles
 
 urlpatterns = [
     url(r'^hello/', hello, name='hello'),
-    url(r'^articles/(?P<articleID>[\d]+)/', viewArticle, name='article_id'),
+    url(r'^article/(?P<articleID>[\d]+)/$', viewArticle, name='article'),
+    url(r'^articles/(?P<month>\d{2})/(?P<year>\d{4})', viewArticles, name='articles'),
 ]
