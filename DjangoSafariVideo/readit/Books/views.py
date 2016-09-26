@@ -35,8 +35,8 @@ class AuthorList(View):
 # class based generic view
 class BookDetail(DetailView):
     model = Book
-    template_name = "book.html"
+    template_name = "Books/book.html"
     
 class AuthorDetail(DetailView):
     model = Author
-    template_name = "author.html"
+    template_name = "Books/author.html"
